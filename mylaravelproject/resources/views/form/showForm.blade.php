@@ -3,8 +3,8 @@
 @section('title', 'Form')
 
 @section('content')
-    <div id="content" style="background-image: url('{{ asset('images/background.png') }}'); background-size: cover; min-height: 100%; width: fit-content; margin: 0 auto;">
-        <div id="form-container" style="text-align: center; padding: 20px; background-color: rgba(255, 255, 255, 0.9); border-radius: 10px;">
+    <div id="content-container" style="text-align: center; padding: 20px; min-height: 100%;">
+        <div id="form-container" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; padding: 20px; width: fit-content; margin: 0 auto;">
             <h1>Form Page</h1>
 
             @if ($errors->any())
@@ -17,17 +17,17 @@
                 </div>
             @endif
 
-            <form action="/form" method="post" style="margin: 0 auto; width: fit-content;">
+            <form action="/form" method="post" style="text-align: left;">
                 @csrf
-                <div style="margin-bottom: 10px; text-align: left;">
+                <div style="margin-bottom: 10px;">
                     <label for="name">Name:</label>
                     <input type="text" name="name" value="{{ old('name') }}" required style="width: 100%;">
                 </div>
-                <div style="margin-bottom: 10px; text-align: left;">
+                <div style="margin-bottom: 10px;">
                     <label for="email">Email:</label>
                     <input type="email" name="email" value="{{ old('email') }}" required style="width: 100%;">
                 </div>
-                <div style="margin-bottom: 10px; text-align: left;">
+                <div style="margin-bottom: 10px;">
                     <label for="message">Message:</label>
                     <textarea name="message" required style="width: 100%;">{{ old('message') }}</textarea>
                 </div>
