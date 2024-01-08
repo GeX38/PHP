@@ -6,7 +6,9 @@
         <ul style="list-style: none; padding: 0; margin: 0; display: inline-block;">
             <li style="display: inline-block; margin-right: 10px;"><a href="/">Home</a></li>
             <li style="display: inline-block; margin-right: 10px;"><a href="/form">Form</a></li>
-            <li style="display: inline-block;"><a href="/data">Data</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="/data">Data</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="{{ route('products.index') }}">Products</a></li>
+            <li style="display: inline-block;"><a href="{{ route('categories.index') }}">Categories</a></li>
         </ul>
     </nav>
 </header>

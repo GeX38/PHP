@@ -20,6 +20,31 @@
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #header a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #content {
+            text-align: center;
+        }
+
+        #footer {
+            text-align: center;
+        }
+
+        #footer a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
         }
     </style>
 </head>
